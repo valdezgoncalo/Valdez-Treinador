@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Site Pessoal</title>
+    <style>
+        /* Estilos Modernos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover { background: #2980b9; }
+        button.undo { background: #e67e22; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <p>Criado com a ajuda do Gemini</p>
+</header>
+
+<main>
+    <h2>Área de Notas (Com Histórico)</h2>
+    <p>Escreve algo abaixo. O sistema guarda o histórico automaticamente.</p>
+    
+    <div class="controls">
+        <button onclick="saveNote()">Guardar Registo</button>
+        <button class="undo" onclick="undoLast()">Undo (Desfazer)</button>
+    </div>
+
+    <textarea id="noteInput" placeholder="Escreve aqui as tuas ideias..."></textarea>
+    
+    <div id="status" style="margin-top: 10px; font-size: 0.9em; color: #666;"></div>
+</main>
+
+<script>
+    // Lógica de Histórico e Registos
+    let history = [];
+    const input = document.getElementById('noteInput');
+    const status = document.getElementById('status');
+
+    function saveNote() {
+        if (input.value.trim() !== "") {
+            history.push(input.value);
+            status.innerText = "Registo guardado no histórico!";
+            setTimeout(() => status.innerText = "", 2000);
+        }
+    }
+
+    function undoLast() {
+        if (history.length > 0) {
+            // Remove o último e volta ao anterior
+            history.pop(); 
+            input.value = history.length > 0 ? history[history.length - 1] : "";
+            status.innerText = "Última alteração desfeita.";
+        } else {
+            status.innerText = "Não há nada para desfazer.";
+        }
+    }
+</script>
+
+</body>
+</html>
