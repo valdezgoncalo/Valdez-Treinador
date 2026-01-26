@@ -30,17 +30,14 @@
         
         h2 { color: var(--sporting-green); font-family: 'Montserrat'; border-left: 6px solid var(--sporting-green); padding-left: 15px; text-transform: uppercase; margin-bottom: 1.5rem; }
         
-        .timeline-item { border-left: 3px solid #eee; padding-left: 20px; margin-bottom: 2rem; position: relative; }
-        .timeline-item::before { content: ""; position: absolute; left: -9px; top: 0; width: 15px; height: 15px; background: var(--sporting-green); border-radius: 50%; }
-        
-        .date-badge { background: var(--sporting-green); color: white; padding: 3px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
-        
-        h3 { margin: 5px 0; color: var(--deep-green); font-size: 1.2rem; }
-        .role { font-weight: 600; color: var(--text-dark); display: block; margin-bottom: 5px; }
-        .desc { font-size: 0.95rem; color: #555; margin: 0; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
         .card { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-top: 4px solid var(--sporting-green); }
+        .card h3 { margin-top: 0; color: var(--deep-green); font-size: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .card ul { padding-left: 18px; margin: 10px 0; font-size: 0.85rem; line-height: 1.6; }
+
+        .timeline-item { border-left: 3px solid #eee; padding-left: 20px; margin-bottom: 1.5rem; position: relative; }
+        .timeline-item::before { content: ""; position: absolute; left: -9px; top: 0; width: 15px; height: 15px; background: var(--sporting-green); border-radius: 50%; }
+        .date-badge { background: var(--sporting-green); color: white; padding: 3px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
 
         footer { background: var(--deep-green); color: white; text-align: center; padding: 2rem; }
     </style>
@@ -49,113 +46,127 @@
 
 <nav>
     <a href="#perfil">Perfil</a>
+    <a href="#formacao">Formação Académica</a>
     <a href="#profissional">Percurso Profissional</a>
-    <a href="#formacao">Formação</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
 <header>
     <img src="perfil.jpg" alt="Gonçalo Valdez" class="profile-img">
-    <h1 style="margin:0; font-family:'Montserrat'; letter-spacing: -1px;">GONÇALO VALDEZ</h1>
-    <p>Treinador Adjunto Sub17 Feminino @ Sporting CP | Head Scout | Analista</p>
+    <h1 style="margin:0; font-family:'Montserrat';">GONÇALO VALDEZ</h1>
+    <p>Treinador de Futebol Nível 2 | Head Scout | Analista de Jogo</p>
 </header>
 
 <section id="perfil">
     <h2>Perfil Profissional</h2>
-    <p>Apaixonado pelo futebol em todas as vertentes, com sólida formação em análise de jogo, scouting e treino desportivo. Perfil dinâmico, proativo e focado na excelência do trabalho em equipa.</p>
+    <p>Sou uma pessoa apaixonada pelo futebol em todas as vertentes, tenho formação na área da análise de jogo, no scouting e formação no treino desportivo. Dinâmico, proativo e atento, com forte foco no trabalho em equipa.</p>
+</section>
+
+<section id="formacao">
+    <h2>Percurso Académico & Formação Completa</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>IPDJ - Treino Desportivo</h3>
+            <ul>
+                <li><strong>2025:</strong> Curso de Treinador NÍVEL 2</li>
+                <li><strong>2023:</strong> Curso de Treinador NÍVEL 1</li>
+                <li><strong>2023:</strong> Curso Nível 1 - Salvaguardar e proteger as crianças e jovens no desporto</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Forma Sports (2021/2022)</h3>
+            <ul>
+                <li>Curso Nível 1 - Scouting</li>
+                <li>Curso Nível 1 - Analista de Jogo</li>
+                <li>Análise de Treino</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Sporting Clube de Portugal</h3>
+            <ul>
+                <li><strong>2015-2016:</strong> Curso Treinador Nível 1 e 2</li>
+                <li><strong>2017:</strong> Curso Alto Rendimento - Metodologia de Treino</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Scouting & Análise Internacional</h3>
+            <ul>
+                <li><strong>FA ENGLAND:</strong> Introduction to Talent Identification in Football</li>
+                <li><strong>PFSA:</strong> Level 1 Opposition Analysis in Football</li>
+                <li><strong>PFSA:</strong> Introduction To Football Scouting</li>
+                <li><strong>APFA:</strong> Opposition Scouting & Analysis</li>
+                <li><strong>APFA:</strong> Post-Match Performance Analysis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Liderança & Gestão</h3>
+            <ul>
+                <li><strong>Universidade Aberta (2022):</strong> Gestão e Liderança Emocional</li>
+                <li><strong>Santander Academy:</strong> Liderança</li>
+                <li><strong>Santander Academy:</strong> Comunicação Assertiva</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section id="profissional">
-    <h2>Percurso Profissional Detalhado</h2>
+    <h2>Percurso Profissional</h2>
 
     <div class="timeline-item">
         <span class="date-badge">2025 / 2026</span>
         <h3>Sporting Clube de Portugal</h3>
-        <span class="role">Treinador Adjunto Sub17 Feminino</span>
-        <p class="desc">Participação no Campeonato Nacional da 2ª Divisão Sub19.</p>
+        <p>Treinador Adjunto Sub17 Feminino - Campeonato Nacional 2ª Divisão Sub19.</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2024 / 2025</span>
         <h3>Futebol Benfica Feminino</h3>
-        <span class="role">Head Scout / Coordenador de Scouting</span>
-        <p class="desc">Responsável pela coordenação de scouting de todo o projeto feminino do clube.</p>
+        <p>Head Scout e Coordenador de Scouting de todo o projeto feminino.</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2024 / 2025</span>
-        <h3>Al-Shabab FC (Arábia Saudita)</h3>
-        <span class="role">Scout Internacional Feminino</span>
-        <p class="desc">Scout focado na identificação de talentos nos principais campeonatos Europeus e Americanos.</p>
+        <h3>Al-Shabab FC</h3>
+        <p>Scout Internacional Feminino (Foco nos principais campeonatos Europeus e Americanos).</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2022 / 2024</span>
         <h3>Albacete Balompié (Espanha)</h3>
-        <span class="role">Scout Principal em Portugal</span>
-        <p class="desc">Departamento de Scouting da equipa feminina (2ª Liga Espanhola).</p>
+        <p>Scout Principal em Portugal - 2ª Liga Feminina.</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2022 / 2025</span>
         <h3>Escola Belenenses / Águias de Camarate</h3>
-        <span class="role">Treinador Principal</span>
-        <p class="desc">
-            • 2024/25: Iniciados 2011 (Treinador Principal)<br>
-            • 2023/24: Infantis 2011 (Treinador Principal)<br>
-            • 2022/23: Infantis 2010 (Treinador Principal)
-        </p>
+        <p>Treinador Principal (Iniciados 2011, Infantis 2011, Infantis 2010).</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2017 / 2022</span>
         <h3>Sporting Clube de Portugal</h3>
-        <span class="role">Observador Técnico (Scout) de Formação</span>
-        <p class="desc">Identificação de talentos na área de Loures e Lisboa para as camadas jovens do Sporting CP.</p>
-    </div>
-
-    <div class="timeline-item">
-        <span class="date-badge">2021 / 2022</span>
-        <h3>Águias de Camarate</h3>
-        <span class="role">Coordenador de Scouting & Treinador Principal</span>
-        <p class="desc">Treinador Principal da equipa Infantil 2010 e Coordenador do departamento de prospeção.</p>
+        <p>Observador Técnico (Scout) de Formação - Áreas de Loures e Lisboa.</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2016 / 2018</span>
-        <h3>Coruchense</h3>
-        <span class="role">Analista da Equipa Sénior</span>
-        <p class="desc">Apoio técnico e análise tática durante a subida e participação no Campeonato de Portugal.</p>
+        <h3>Coruchense / SL Cartaxo</h3>
+        <p>Analista de Equipa Sénior e Apoio Técnico.</p>
     </div>
 
     <div class="timeline-item">
         <span class="date-badge">2015 / 2016</span>
-        <h3>SL Cartaxo / Operário Lisboa / EAS Amadora</h3>
-        <span class="role">Analista / Treinador de Formação</span>
-        <p class="desc">
-            • SL Cartaxo: Analista da Equipa Sénior<br>
-            • Operário Lisboa: Treinador da Equipa de Iniciados<br>
-            • EAS Sporting Amadora: Treinador nos escalões de formação
-        </p>
-    </div>
-</section>
-
-<section id="formacao">
-    <h2>Resumo de Qualificações</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Treino (IPDJ/SCP)</h3>
-            <p>Nível 2 IPDJ (2025), Nível 1 IPDJ (2023) e Metodologia de Alto Rendimento (Sporting CP, 2017).</p>
-        </div>
-        <div class="card">
-            <h3>Scouting & Análise</h3>
-            <p>Certificações internacionais: FA England, PFSA (Opposition Analysis) e APFA (Post-Match Performance).</p>
-        </div>
+        <h3>Operário Lisboa / EAS Amadora</h3>
+        <p>Treinador de Formação (Iniciados e Escolas).</p>
     </div>
 </section>
 
 <section id="contacto">
-    <h2>Contacto</h2>
+    <h2>Contacto Direto</h2>
     <p>📱 <strong>Telemóvel:</strong> (+351) 910 849 306</p>
     <p>✉️ <strong>Email:</strong> g.valdez1954@hotmail.com</p>
     <p>📸 <strong>Instagram:</strong> @treinadorvaldez</p>
