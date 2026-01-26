@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonçalo Valdez | Treinador & Head Scout</title>
+    <title>Gonçalo Valdez | Portfólio Profissional</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -15,134 +15,18 @@
             --accent-gold: #d4af37;
         }
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            background-color: var(--light-gray);
-            color: var(--text-dark);
-            scroll-behavior: smooth;
-        }
-
-        nav {
-            background: var(--sporting-green);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--white);
-            font-weight: 700;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        nav a:hover { color: var(--accent-gold); }
-
-        header {
-            background: linear-gradient(135deg, rgba(0, 102, 51, 0.9), rgba(0, 77, 38, 0.8)), 
-                        url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            padding: 6rem 1rem;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
-
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 6px solid var(--white);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            margin-bottom: 1.5rem;
-            object-fit: cover;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: -40px auto 4rem auto;
-            padding: 3rem;
-            background: var(--white);
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-
-        h2 { 
-            color: var(--sporting-green);
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            border-left: 6px solid var(--sporting-green);
-            padding-left: 15px;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-item {
-            border-left: 3px solid #eee;
-            padding-left: 25px;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            left: -9px;
-            top: 0;
-            width: 15px;
-            height: 15px;
-            background: var(--sporting-green);
-            border-radius: 50%;
-        }
-
-        .date-badge {
-            background: var(--sporting-green);
-            color: white;
-            padding: 3px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--light-gray);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-bottom: 4px solid var(--sporting-green);
-        }
-
-        /* Galeria */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery-card {
-            height: 200px;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #eee;
-            position: relative;
-        }
-
-        .gallery-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
-        .gallery-card:hover img { transform: scale(1.1); }
-
+        body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: var(--light-gray); color: var(--text-dark); scroll-behavior: smooth; }
+        nav { background: var(--sporting-green); padding: 1rem 0; position: sticky; top: 0; display: flex; justify-content: center; gap: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
+        nav a { text-decoration: none; color: var(--white); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
+        header { background: linear-gradient(135deg, rgba(0, 102, 51, 0.9), rgba(0, 77, 38, 0.8)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070&auto=format&fit=crop'); background-size: cover; padding: 5rem 1rem; text-align: center; color: white; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .profile-img { width: 170px; height: 170px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 1rem; }
+        section { max-width: 1000px; margin: -30px auto 3rem auto; padding: 2.5rem; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h2 { color: var(--sporting-green); font-family: 'Montserrat'; border-left: 6px solid var(--sporting-green); padding-left: 15px; text-transform: uppercase; margin-bottom: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-top: 4px solid var(--sporting-green); height: auto; }
+        .card h3 { margin-top: 0; color: var(--deep-green); font-size: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .card ul { padding-left: 18px; margin: 10px 0; font-size: 0.85rem; line-height: 1.5; }
+        .card li { margin-bottom: 5px; }
         footer { background: var(--deep-green); color: white; text-align: center; padding: 2rem; }
     </style>
 </head>
@@ -150,105 +34,87 @@
 
 <nav>
     <a href="#perfil">Perfil</a>
-    <a href="#formacao">Formação</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#galeria">Galeria</a>
+    <a href="#formacao">Formação Académica</a>
+    <a href="#experiencia">Experiência Profissional</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
 <header>
     <img src="perfil.jpg" alt="Gonçalo Valdez" class="profile-img">
-    <h1 style="font-family: 'Montserrat'; font-weight: 800; margin: 0;">GONÇALO VALDEZ</h1>
-    <p>Treinador Adjunto Sub17 Feminino @ Sporting CP | Scout | Analista</p>
+    <h1 style="margin:0; font-family:'Montserrat';">GONÇALO VALDEZ</h1>
+    <p>Treinador de Futebol | Head Scout | Analista de Jogo</p>
 </header>
 
 <section id="perfil">
     <h2>Perfil Profissional</h2>
-    <p>Sou uma pessoa apaixonada pelo futebol em todas as vertentes, tenho formação na área da análise de jogo, no scouting e formação no treino desportivo. Sou muito dinâmico, proativo e atento. Gosto de trabalhar em equipa e gosto de ajudar sempre que possa.</p>
-    
-    <div style="background: #fffdf2; border: 1px solid var(--accent-gold); padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
-        <strong style="color: var(--deep-green);">🏆 Conquistas Principais:</strong>
-        <ul style="margin: 10px 0 0 0; padding-left: 20px;">
-            <li>2º Lugar Distrital Santarém - SL Cartaxo (2015/2016)</li>
-            <li>Campeão Distrital - Coruchense (2016/2017)</li>
-            <li>Participação Campeonato Portugal - Coruchense (2017/2018)</li>
-        </ul>
-    </div>
+    <p>Sou uma pessoa apaixonada pelo futebol em todas as vertentes, tenho formação na área da análise de jogo, no scouting e formação no treino desportivo. Dinâmico, proativo e atento, com forte foco no trabalho em equipa.</p>
 </section>
 
 <section id="formacao">
     <h2>Percurso Académico & Formação</h2>
     <div class="grid">
         <div class="card">
-            <span class="date-badge">2023 - 2025</span>
-            <h3>Treino Desportivo</h3>
-            <p>• Curso Treinador Nível 1 & Nível 2 (IPDJ)<br>
-               • Salvaguarda de Crianças no Desporto</p>
+            <h3>IPDJ & Treino</h3>
+            <ul>
+                <li><strong>2025:</strong> Curso de Treinador NÍVEL 2</li>
+                <li><strong>2023:</strong> Curso de Treinador NÍVEL 1</li>
+                <li><strong>2023:</strong> Nível 1 - Salvaguardar e proteger as crianças e jovens no desporto</li>
+            </ul>
         </div>
+
         <div class="card">
-            <span class="date-badge">Especialização</span>
-            <h3>Scouting & Análise</h3>
-            <p>• Scouting Nível 1 (Forma Sports)<br>
-               • Talent Identification (FA England)<br>
-               • Opposition Analysis (PFSA & APFA)</p>
+            <h3>Sporting Clube de Portugal</h3>
+            <ul>
+                <li><strong>2015-2016:</strong> Curso Treinador Nível 1 e 2</li>
+                <li><strong>2017:</strong> Curso Alto Rendimento - Metodologia de Treino</li>
+            </ul>
         </div>
+
         <div class="card">
-            <span class="date-badge">Liderança</span>
-            <h3>Gestão & Soft Skills</h3>
-            <p>• Liderança Emocional (U. Aberta)<br>
-               • Comunicação Assertiva (Santander)</p>
+            <h3>Scouting & Análise Internacional</h3>
+            <ul>
+                <li><strong>FA ENGLAND:</strong> Introduction to Talent Identification in Football</li>
+                <li><strong>PFSA:</strong> Level 1 Opposition Analysis in Football</li>
+                <li><strong>PFSA:</strong> Introduction To Football Scouting</li>
+                <li><strong>APFA:</strong> Opposition Scouting & Analysis</li>
+                <li><strong>APFA:</strong> Post-Match Performance Analysis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Forma Sports (2021/2022)</h3>
+            <ul>
+                <li>Curso Nível 1 - Scouting</li>
+                <li>Curso Nível 1 - Analista de Jogo</li>
+                <li>Análise de treino</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Liderança & Comunicação</h3>
+            <ul>
+                <li><strong>U. Aberta (2022):</strong> Gestão e Liderança Emocional</li>
+                <li><strong>Santander Academy:</strong> Liderança</li>
+                <li><strong>Santander Academy:</strong> Comunicação Assertiva</li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section id="experiencia">
-    <h2>Percurso Profissional</h2>
-    
-    <div class="timeline-item">
-        <span class="date-badge">2025 / 2026</span>
-        <h3>Sporting Clube de Portugal</h3>
-        <p>Treinador Adjunto Sub17 Feminino - Campeonato Nacional 2ª Divisão Sub19.</p>
-    </div>
-
-    <div class="timeline-item">
-        <span class="date-badge">2024 / 2025</span>
-        <h3>Futebol Benfica Feminino</h3>
-        <p>Head Scout e Coordenador de Scouting de todo o projeto feminino.</p>
-    </div>
-
-    <div class="timeline-item">
-        <span class="date-badge">2024 / 2025</span>
-        <h3>Al-Shabab FC</h3>
-        <p>Scout Internacional Feminino (Foco em Mercados Europeus e Americanos).</p>
-    </div>
-
-    <div class="timeline-item">
-        <span class="date-badge">2022 / 2024</span>
-        <h3>Albacete Balompié (Espanha)</h3>
-        <p>Scout Principal em Portugal - 2ª Liga Feminina.</p>
-    </div>
-
-    <div class="timeline-item">
-        <span class="date-badge">2017 / 2022</span>
-        <h3>Sporting Clube de Portugal</h3>
-        <p>Observador Técnico (Scout) de Formação - Áreas de Loures e Lisboa.</p>
-    </div>
-</section>
-
-<section id="galeria">
-    <h2>Galeria</h2>
-    <div class="gallery-grid">
-        <div class="gallery-card"><img src="foto1.jpg" alt="Treino"></div>
-        <div class="gallery-card"><img src="foto2.jpg" alt="Scouting"></div>
-        <div class="gallery-card"><img src="foto3.jpg" alt="Análise"></div>
+    <h2>Experiência Profissional</h2>
+    <div style="border-left: 3px solid var(--sporting-green); padding-left: 20px;">
+        <p><strong>2025/2026:</strong> Sporting CP - Treinador Adjunto Sub17 Feminino</p>
+        <p><strong>2024/2025:</strong> Futebol Benfica - Head Scout / Coordenador</p>
+        <p><strong>2024/2025:</strong> Al-Shabab FC - Scout Internacional</p>
+        <p><strong>2022/2024:</strong> Albacete Feminino - Scout Principal em Portugal</p>
+        <p><strong>2017/2022:</strong> Sporting CP - Observador Técnico (Scout)</p>
     </div>
 </section>
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <p>📱 <strong>Telemóvel:</strong> (+351) 910 849 306</p>
-    <p>✉️ <strong>Email:</strong> g.valdez1954@hotmail.com</p>
-    <p>📸 <strong>Instagram:</strong> @treinadorvaldez</p>
+    <p>📱 (+351) 910 849 306 | ✉️ g.valdez1954@hotmail.com</p>
 </section>
 
 <footer>
