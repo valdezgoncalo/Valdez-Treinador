@@ -3,99 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Meu Site Pessoal</title>
+    <title>O Meu Portfólio Profissional</title>
     <style>
-        /* Estilos Modernos */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e67e22;
+            --light: #f4f7f6;
+            --dark: #333;
         }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        /* Navegação */
+        nav {
+            background: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--secondary); }
+
+        /* Header */
         header {
-            background: #2c3e50;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 2rem;
+            padding: 4rem 1rem;
             text-align: center;
         }
-        main {
-            max-width: 800px;
+
+        section {
+            max-width: 1000px;
             margin: 2rem auto;
             padding: 2rem;
             background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 { border-bottom: 3px solid var(--secondary); padding-bottom: 10px; color: var(--primary); }
+
+        /* Galeria */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .gallery-item {
+            background: #ddd;
+            height: 200px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .controls {
-            margin-bottom: 1rem;
             display: flex;
-            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
         }
+
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Currículo */
+        .cv-item { margin-bottom: 1.5rem; }
+        .date { font-weight: bold; color: var(--secondary); font-size: 0.9em; }
+
+        /* Sistema de Notas com Histórico */
+        .history-box {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+
         textarea {
             width: 100%;
-            height: 150px;
-            padding: 10px;
+            height: 100px;
+            margin: 10px 0;
+            border-radius: 5px;
             border: 1px solid #ddd;
-            border-radius: 4px;
-            resize: vertical;
+            padding: 10px;
+            box-sizing: border-box;
         }
-        button {
-            background: #3498db;
-            color: white;
-            border: none;
+
+        .btn {
             padding: 10px 20px;
-            border-radius: 4px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s;
+            font-weight: bold;
         }
-        button:hover { background: #2980b9; }
-        button.undo { background: #e67e22; }
+        .btn-save { background: var(--secondary); color: white; }
+        .btn-undo { background: var(--accent); color: white; }
+
+        footer { text-align: center; padding: 2rem; color: #777; }
     </style>
 </head>
 <body>
 
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Trabalhos</a>
+    <a href="#curriculo">Currículo</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
 <header>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Criado com a ajuda do Gemini</p>
+    <h1>[Teu Nome Aqui]</h1>
+    <p>Especialista em [Tua Profissão]</p>
 </header>
 
-<main>
-    <h2>Área de Notas (Com Histórico)</h2>
-    <p>Escreve algo abaixo. O sistema guarda o histórico automaticamente.</p>
-    
-    <div class="controls">
-        <button onclick="saveNote()">Guardar Registo</button>
-        <button class="undo" onclick="undoLast()">Undo (Desfazer)</button>
-    </div>
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Sou um profissional apaixonado por criar soluções inovadoras. Com anos de experiência no setor, foco-me em entregar resultados de alta qualidade e design funcional.</p>
+</section>
 
-    <textarea id="noteInput" placeholder="Escreve aqui as tuas ideias..."></textarea>
-    
-    <div id="status" style="margin-top: 10px; font-size: 0.9em; color: #666;"></div>
-</main>
+<section id="galeria">
+    <h2>Galeria de Fotos / Projetos</h2>
+    <div class="gallery">
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt="Projeto 1"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt="Projeto 2"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt="Projeto 3"></div>
+    </div>
+</section>
+
+<section id="curriculo">
+    <h2>Currículo</h2>
+    <div class="cv-item">
+        <span class="date">2024 - Presente</span>
+        <h3>Cargo Atual - Nome da Empresa</h3>
+        <p>Responsável pelo desenvolvimento de projetos X e gestão de equipas.</p>
+    </div>
+    <div class="cv-item">
+        <span class="date">2021 - 2023</span>
+        <h3>Cargo Anterior - Nome da Empresa</h3>
+        <p>Foco em otimização de processos e design de interface.</p>
+    </div>
+</section>
+
+<section class="history-box">
+    <h3>Rascunho de Ideias (Com Histórico)</h3>
+    <p><small>Usa este espaço para anotar alterações que queres fazer no site.</small></p>
+    <textarea id="noteInput" placeholder="Ex: Adicionar foto nova à galeria..."></textarea>
+    <div>
+        <button class="btn btn-save" onclick="saveToHistory()">Guardar Registo</button>
+        <button class="btn btn-undo" onclick="undo()">Desfazer Último</button>
+    </div>
+    <p id="status" style="font-size: 0.8em; color: green;"></p>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>E-mail: <a href="mailto:exemplo@email.com">exemplo@email.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/teuperfil</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 - Criado por [Teu Nome]</p>
+</footer>
 
 <script>
-    // Lógica de Histórico e Registos
-    let history = [];
+    let logs = [];
     const input = document.getElementById('noteInput');
     const status = document.getElementById('status');
 
-    function saveNote() {
+    function saveToHistory() {
         if (input.value.trim() !== "") {
-            history.push(input.value);
-            status.innerText = "Registo guardado no histórico!";
+            logs.push(input.value);
+            status.innerText = "Estado guardado!";
             setTimeout(() => status.innerText = "", 2000);
         }
     }
 
-    function undoLast() {
-        if (history.length > 0) {
-            // Remove o último e volta ao anterior
-            history.pop(); 
-            input.value = history.length > 0 ? history[history.length - 1] : "";
-            status.innerText = "Última alteração desfeita.";
+    function undo() {
+        if (logs.length > 1) {
+            logs.pop(); // Remove o atual
+            input.value = logs[logs.length - 1];
+            status.innerText = "Revertido para a versão anterior.";
+        } else if (logs.length === 1) {
+            logs.pop();
+            input.value = "";
+            status.innerText = "Histórico limpo.";
         } else {
-            status.innerText = "Não há nada para desfazer.";
+            status.innerText = "Nada para desfazer.";
         }
     }
 </script>
