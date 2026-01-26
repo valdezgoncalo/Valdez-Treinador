@@ -3,225 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonçalo Valdez - Treinador & Scout</title>
+    <title>O Meu Site Pessoal</title>
     <style>
-        :root {
-            --primary: #1a2a3a; /* Azul Profissional */
-            --secondary: #3498db; 
-            --accent: #d4af37; /* Dourado para Conquistas */
-            --light: #f8f9fa;
-            --white: #ffffff;
-        }
-
+        /* Estilos Modernos */
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: var(--light);
-            color: var(--primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            scroll-behavior: smooth;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-
-        /* Navegação */
-        nav {
-            background: var(--white);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        /* Header / Hero */
         header {
-            background: linear-gradient(rgba(26, 42, 58, 0.9), rgba(26, 42, 58, 0.9)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80'); /* Fundo de futebol */
-            background-size: cover;
-            color: var(--white);
-            padding: 4rem 1rem;
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
             text-align: center;
         }
-
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid var(--white);
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            max-width: 900px;
+        main {
+            max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
-            background: var(--white);
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
-        h2 { 
-            color: var(--primary); 
-            border-left: 5px solid var(--secondary); 
-            padding-left: 15px;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Estilo Currículo e Formação */
-        .item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .item:last-child { border: none; }
-
-        .date {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 2px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-bottom: 5px;
-        }
-
-        .conquistas {
-            background: #fffdf2;
-            border: 1px solid var(--accent);
-            padding: 1rem;
-            border-radius: 8px;
-        }
-
-        .conquistas li { color: #856404; list-style: none; }
-        .conquistas li::before { content: "🏆 "; }
-
-        /* Galeria */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery-item {
-            background: #eee;
-            height: 150px;
-            border-radius: 6px;
+        .controls {
+            margin-bottom: 1rem;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            color: #999;
+            gap: 10px;
         }
-
-        footer { text-align: center; padding: 3rem; background: var(--primary); color: white; margin-top: 4rem; }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover { background: #2980b9; }
+        button.undo { background: #e67e22; }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#formacao">Formação</a>
-    <a href="#curriculo">Experiência</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
 <header>
-    <img src="A_TUA_FOTO.jpg" alt="Gonçalo Valdez" class="profile-img">
-    <h1>GONÇALO VALDEZ</h1>
-    <p>Treinador de Futebol Nível 2 | Analista de Jogo | Scout</p>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <p>Criado com a ajuda do Gemini</p>
 </header>
 
-<section id="sobre">
-    <h2>Perfil Profissional</h2>
-    <p>Sou uma pessoa apaixonada pelo futebol em todas as vertentes, tenho formação na área da análise de jogo, no scouting e formação no treino desportivo[cite: 7]. Sou muito dinâmico, proativo e atento. Gosto de trabalhar em equipa e gosto de ajudar sempre que possa[cite: 8].</p>
+<main>
+    <h2>Área de Notas (Com Histórico)</h2>
+    <p>Escreve algo abaixo. O sistema guarda o histórico automaticamente.</p>
     
-    <div class="conquistas">
-        <strong>Conquistas:</strong>
-        <ul>
-            <li>2º Lugar Distrital Santarém - SL Cartaxo 2015/2016 [cite: 10]</li>
-            <li>Campeão Distrital - Coruchense 2016/2017 [cite: 10]</li>
-            <li>Campeonato Portugal - Coruchense 2017/2018 [cite: 10]</li>
-        </ul>
+    <div class="controls">
+        <button onclick="saveNote()">Guardar Registo</button>
+        <button class="undo" onclick="undoLast()">Undo (Desfazer)</button>
     </div>
-</section>
 
-<section id="formacao">
-    <h2>Formação Académica & Cursos</h2>
-    <div class="item">
-        <span class="date">2025</span>
-        <h3>IPDJ - Curso Treinador NÍVEL 2 [cite: 5]</h3>
-    </div>
-    <div class="item">
-        <span class="date">2023</span>
-        <h3>IPDJ - Curso Treinador NÍVEL 1 [cite: 4]</h3>
-        <p>Curso de salvaguarda e proteção de crianças e jovens no desporto[cite: 25].</p>
-    </div>
-    <div class="item">
-        <span class="date">Outras Certificações</span>
-        <ul>
-            <li>Scouting & Análise de Jogo - Forma Sports [cite: 21]</li>
-            <li>Introduction to Talent Identification - FA England [cite: 29]</li>
-            <li>Opposition Analysis - PFSA & APFA [cite: 31, 35]</li>
-            <li>Gestão e Liderança Emocional - Universidade Aberta [cite: 23]</li>
-        </ul>
-    </div>
-</section>
+    <textarea id="noteInput" placeholder="Escreve aqui as tuas ideias..."></textarea>
+    
+    <div id="status" style="margin-top: 10px; font-size: 0.9em; color: #666;"></div>
+</main>
 
-<section id="curriculo">
-    <h2>Percurso Profissional</h2>
-    <div class="item">
-        <span class="date">2025/2026</span>
-        <h3>Treinador Adjunto Sub17 Feminino - Sporting CP</h3>
-        <p>Campeonato Nacional 2ª Divisão Sub19[cite: 85, 86].</p>
-    </div>
-    <div class="item">
-        <span class="date">2024/2025</span>
-        <h3>Head Scout - Futebol Benfica Feminino</h3>
-        <p>Coordenador de Scouting de todo o projeto feminino[cite: 77, 78, 81].</p>
-    </div>
-    <div class="item">
-        <span class="date">2024/2025</span>
-        <h3>Scout Internacional - Al-Shabab Feminino</h3>
-        <p>Foco nos principais campeonatos Europeus e Americanos[cite: 64, 68, 69].</p>
-    </div>
-    <div class="item">
-        <span class="date">2017 - 2022</span>
-        <h3>Observador Técnico - Sporting Clube de Portugal</h3>
-        <p>Scout na área de Loures e Lisboa para a formação[cite: 47, 48, 49].</p>
-    </div>
-</section>
+<script>
+    // Lógica de Histórico e Registos
+    let history = [];
+    const input = document.getElementById('noteInput');
+    const status = document.getElementById('status');
 
-<section id="galeria">
-    <h2>Galeria de Projetos</h2>
-    <div class="gallery">
-        <div class="gallery-item">Foto Treino</div>
-        <div class="gallery-item">Análise de Jogo</div>
-        <div class="gallery-item">Equipa Técnica</div>
-    </div>
-</section>
+    function saveNote() {
+        if (input.value.trim() !== "") {
+            history.push(input.value);
+            status.innerText = "Registo guardado no histórico!";
+            setTimeout(() => status.innerText = "", 2000);
+        }
+    }
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p><strong>Telemóvel:</strong> (+351) 910 849 306 [cite: 12]</p>
-    <p><strong>Email:</strong> <a href="mailto:g.valdez1954@hotmail.com">g.valdez1954@hotmail.com</a> [cite: 12]</p>
-    <p><strong>Instagram:</strong> @treinadorvaldez [cite: 12]</p>
-</section>
-
-<footer>
-    <p>&copy; 2026 Gonçalo Valdez. Todos os direitos reservados.</p>
-</footer>
+    function undoLast() {
+        if (history.length > 0) {
+            // Remove o último e volta ao anterior
+            history.pop(); 
+            input.value = history.length > 0 ? history[history.length - 1] : "";
+            status.innerText = "Última alteração desfeita.";
+        } else {
+            status.innerText = "Não há nada para desfazer.";
+        }
+    }
+</script>
 
 </body>
 </html>
