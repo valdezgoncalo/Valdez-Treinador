@@ -32,23 +32,20 @@
         
         h2 { color: var(--sporting-green); font-family: 'Montserrat'; border-left: 6px solid var(--sporting-green); padding-left: 15px; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 1px; }
         
-        .perfil-destaque { font-size: 1.15rem; line-height: 1.8; color: #333; font-style: italic; border-left: 3px solid #eee; padding-left: 20px; }
+        .perfil-destaque { font-size: 1.15rem; line-height: 1.8; color: #333; font-style: italic; border-left: 3px solid #eee; padding-left: 20px; margin-bottom: 2rem; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .card { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-top: 5px solid var(--sporting-green); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.05); }
-        .card h3 { margin-top: 0; color: var(--deep-green); font-size: 1.1rem; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
-        .card ul { padding-left: 18px; margin: 15px 0; font-size: 0.85rem; line-height: 1.7; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-top: 5px solid var(--sporting-green); }
+        .card h3 { margin-top: 0; color: var(--deep-green); font-size: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+        .card ul { padding-left: 18px; margin: 15px 0; font-size: 0.85rem; line-height: 1.6; }
+
+        /* Conquistas Style */
+        .conquista-item { display: flex; align-items: center; gap: 15px; background: #fffdf2; border: 1px solid var(--accent-gold); padding: 15px; border-radius: 10px; margin-bottom: 10px; }
+        .trophy-icon { font-size: 1.5rem; color: var(--accent-gold); }
 
         .timeline-item { border-left: 3px solid #eee; padding-left: 25px; margin-bottom: 2rem; position: relative; }
         .timeline-item::before { content: ""; position: absolute; left: -10px; top: 0; width: 17px; height: 17px; background: var(--sporting-green); border-radius: 50%; border: 3px solid white; }
         .date-badge { background: var(--sporting-green); color: white; padding: 4px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; margin-bottom: 10px; display: inline-block; }
-
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 20px; }
-        .gallery-item { position: relative; height: 260px; border-radius: 10px; overflow: hidden; background-color: #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; }
-        .gallery-item:hover img { transform: scale(1.1); }
-        .overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 102, 51, 0.9); color: white; padding: 12px; text-align: center; font-size: 0.85rem; font-weight: bold; }
 
         footer { background: var(--deep-green); color: white; text-align: center; padding: 3rem; font-size: 0.9rem; }
     </style>
@@ -57,9 +54,9 @@
 
 <nav>
     <a href="#perfil">Perfil</a>
+    <a href="#conquistas">Conquistas</a>
     <a href="#formacao">Formação</a>
     <a href="#profissional">Experiência</a>
-    <a href="#galeria">Galeria</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
@@ -76,38 +73,77 @@
     </p>
 </section>
 
+<section id="conquistas">
+    <h2>Principais Conquistas</h2>
+    <div class="conquista-item">
+        <span class="trophy-icon">🏆</span>
+        <div>
+            <strong>Campeão Distrital (2016/2017)</strong><br>
+            <small>Coruchense - Subida ao Campeonato de Portugal</small>
+        </div>
+    </div>
+    <div class="conquista-item">
+        <span class="trophy-icon">🏅</span>
+        <div>
+            <strong>2º Lugar Distrital de Santarém (2015/2016)</strong><br>
+            <small>SL Cartaxo - Equipa Sénior</small>
+        </div>
+    </div>
+    <div class="conquista-item">
+        <span class="trophy-icon">⚽</span>
+        <div>
+            <strong>Participação no Campeonato de Portugal (2017/2018)</strong><br>
+            <small>Coruchense - Analista e Apoio Técnico</small>
+        </div>
+    </div>
+</section>
+
 <section id="formacao">
-    <h2>Percurso Académico & Especializações</h2>
+    <h2>Percurso Académico & Formação</h2>
     <div class="grid">
         <div class="card">
-            <h3>Treino & Salvaguarda</h3>
+            <h3>IPDJ & Treino</h3>
             <ul>
-                <li><strong>IPDJ:</strong> Curso Treinador NÍVEL 2 (2025) & NÍVEL 1 (2023)</li>
-                <li><strong>SCP:</strong> Metodologia de Alto Rendimento (2017)</li>
-                <li><strong>Proteção:</strong> Salvaguarda de Crianças no Desporto (2023)</li>
+                <li><strong>2025:</strong> Curso de Treinador NÍVEL 2</li>
+                <li><strong>2023:</strong> Curso de Treinador NÍVEL 1</li>
+                <li><strong>2023:</strong> Nível 1 - Salvaguardar e proteger as crianças e jovens no desporto</li>
             </ul>
         </div>
         <div class="card">
-            <h3>Scouting & Análise Elite</h3>
+            <h3>Sporting Clube de Portugal</h3>
             <ul>
-                <li><strong>FA ENGLAND:</strong> Talent Identification in Football</li>
-                <li><strong>PFSA:</strong> Opposition Analysis & Intro to Scouting</li>
-                <li><strong>APFA:</strong> Post-Match Performance & Opposition Scouting</li>
-                <li><strong>FORMA SPORTS:</strong> Scouting & Analista de Jogo (21/22)</li>
+                <li><strong>2015-2016:</strong> Curso Treinador Nível 1 e 2</li>
+                <li><strong>2017:</strong> Curso Alto Rendimento - Metodologia de Treino</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Scouting & Análise Internacional</h3>
+            <ul>
+                <li><strong>FA ENGLAND:</strong> Introduction to Talent Identification in Football</li>
+                <li><strong>PFSA:</strong> Level 1 Opposition Analysis & Introduction To Football Scouting</li>
+                <li><strong>APFA:</strong> Opposition Scouting & Analysis & Post-Match Performance Analysis</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Forma Sports (2021/2022)</h3>
+            <ul>
+                <li>Curso Nível 1 - Scouting</li>
+                <li>Curso Nível 1 - Analista de Jogo</li>
+                <li>Análise de treino</li>
             </ul>
         </div>
         <div class="card">
             <h3>Liderança & Gestão</h3>
             <ul>
-                <li><strong>U. Aberta:</strong> Gestão e Liderança Emocional (2022)</li>
-                <li><strong>Santander Academy:</strong> Comunicação Assertiva & Liderança</li>
+                <li><strong>U. Aberta (2022):</strong> Gestão e Liderança Emocional</li>
+                <li><strong>Santander Academy:</strong> Liderança & Comunicação Assertiva</li>
             </ul>
         </div>
     </div>
 </section>
 
 <section id="profissional">
-    <h2>Experiência Profissional</h2>
+    <h2>Percurso Profissional</h2>
     <div class="timeline-item">
         <span class="date-badge">2025 / 2026</span>
         <h3>Sporting Clube de Portugal</h3>
@@ -116,21 +152,37 @@
     <div class="timeline-item">
         <span class="date-badge">2024 / 2025</span>
         <h3>Futebol Benfica Feminino</h3>
-        <p><strong>Head Scout / Coordenador</strong> - Responsável pela estrutura de prospeção feminina.</p>
+        <p><strong>Head Scout / Coordenador</strong> - Coordenação de scouting do projeto feminino.</p>
     </div>
     <div class="timeline-item">
         <span class="date-badge">2024 / 2025</span>
         <h3>Al-Shabab FC (Arábia Saudita)</h3>
-        <p><strong>Scout Internacional</strong> - Análise de mercados Europeus e Americanos.</p>
+        <p><strong>Scout Internacional Feminino</strong> - Mercados Europeus e Americanos.</p>
     </div>
-</section>
-
-<section id="galeria">
-    <h2>Galeria</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item"><img src="foto1.jpg" alt="Campo"><div class="overlay">Unidade de Treino</div></div>
-        <div class="gallery-item"><img src="foto2.jpg" alt="Analise"><div class="overlay">Análise Tática</div></div>
-        <div class="gallery-item"><img src="foto3.jpg" alt="Scouting"><div class="overlay">Observação</div></div>
+    <div class="timeline-item">
+        <span class="date-badge">2022 / 2024</span>
+        <h3>Albacete Balompié (Espanha)</h3>
+        <p><strong>Scout Principal em Portugal</strong> - 2ª Liga Feminina Espanhola.</p>
+    </div>
+    <div class="timeline-item">
+        <span class="date-badge">2022 / 2025</span>
+        <h3>Escola Belenenses / Águias de Camarate</h3>
+        <p><strong>Treinador Principal</strong> (Iniciados 2011, Infantis 2011, Infantis 2010).</p>
+    </div>
+    <div class="timeline-item">
+        <span class="date-badge">2017 / 2022</span>
+        <h3>Sporting Clube de Portugal</h3>
+        <p><strong>Observador Técnico (Scout) de Formação</strong> - Loures e Lisboa.</p>
+    </div>
+    <div class="timeline-item">
+        <span class="date-badge">2016 / 2018</span>
+        <h3>Coruchense / SL Cartaxo</h3>
+        <p><strong>Analista de Equipa Sénior</strong> - Apoio técnico e análise tática.</p>
+    </div>
+    <div class="timeline-item">
+        <span class="date-badge">2015 / 2016</span>
+        <h3>Operário Lisboa / EAS Amadora</h3>
+        <p><strong>Treinador de Formação</strong> (Iniciados e Escolas).</p>
     </div>
 </section>
 
