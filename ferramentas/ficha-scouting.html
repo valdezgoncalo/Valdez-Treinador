@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07130f">
+<meta name="description" content="Ficha interativa de scouting e avaliação individual de jogadores — Gonçalo Valdez.">
+<title>Ficha de Scouting | Gonçalo Valdez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07130f;--panel:#0d1d17;--panel2:#11251c;--line:rgba(220,245,230,.14);--green:#9be15d;--white:#f5f8f5;--muted:#aab8af;--max:1040px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font:15px/1.6 'DM Sans',sans-serif}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}a{color:var(--green);text-decoration:none}.top{border-bottom:1px solid var(--line);background:#091710}.top .wrap{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font:800 1rem Manrope;letter-spacing:.08em;color:white}.brand span{color:var(--green)}.back{font-size:.82rem}.hero{padding:44px 0 28px}.eyebrow{color:var(--green);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.hero h1{font:800 clamp(2rem,5vw,3.4rem)/1.08 Manrope;letter-spacing:-.04em;margin:10px 0}.hero p{max-width:760px;color:var(--muted);margin:0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--white);border-radius:5px;padding:11px 15px;font:700 .82rem 'DM Sans';cursor:pointer}.btn.primary{background:var(--green);border-color:var(--green);color:#102015}.note{font-size:.78rem;color:var(--muted);margin-top:12px}.section{margin:18px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px}.section h2{font:700 1.15rem Manrope;margin:0 0 5px}.section .hint{font-size:.78rem;color:var(--muted);margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.field{min-width:0}.field label,.label{display:block;color:#dce8df;font-size:.76rem;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;min-width:0;background:#081710;border:1px solid #294235;border-radius:5px;color:var(--white);padding:10px 11px;font: .88rem 'DM Sans';outline:none}.field textarea{min-height:88px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 2px #9be15d22}.checkrow{display:flex;flex-wrap:wrap;gap:10px 18px}.checkrow label{font-size:.82rem;color:#dce8df;display:flex;gap:7px;align-items:center}.checkrow input{accent-color:var(--green)}.rating-table{width:100%;border-collapse:collapse;font-size:.82rem}.rating-table th,.rating-table td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}.rating-table th{color:var(--green);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}.rating-table td:first-child{width:42%}.rating-table select{background:#081710;color:white;border:1px solid #294235;border-radius:4px;padding:7px;width:100%;min-width:65px}.position-block{border:1px solid var(--line);padding:14px;border-radius:6px;margin-top:14px}.position-block h3{font:700 .9rem Manrope;margin:0 0 10px;color:var(--green)}.small{font-size:.75rem;color:var(--muted)}.footer{color:var(--muted);font-size:.75rem;padding:28px 0 50px;text-align:center}.scale{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.scale span{border:1px solid var(--line);border-radius:4px;padding:5px 8px;color:var(--muted);font-size:.72rem}
+@media(max-width:650px){.grid,.grid.three{grid-template-columns:1fr}.section{padding:16px}.rating-table{font-size:.74rem}.rating-table th,.rating-table td{padding:7px 4px}.rating-table td:first-child{width:45%}.top .wrap{min-height:60px}}
+@media print{ @page{size:A4;margin:12mm}body{background:#fff!important;color:#111!important;font-size:10pt}.top,.actions,.note,.footer{display:none!important}.wrap{width:100%;max-width:none}.hero{padding:0 0 12px}.hero h1,.section h2,.position-block h3{color:#111}.hero p,.section .hint,.small{color:#444}.eyebrow,.rating-table th{color:#245a35}.section{background:#fff!important;border:1px solid #bbb!important;padding:12px;margin:10px 0;break-inside:avoid}.field label,.label,.checkrow label{color:#111}.field input,.field select,.field textarea,.rating-table select{background:#fff!important;color:#111!important;border:1px solid #888!important;box-shadow:none!important}.field textarea{min-height:58px}.position-block{border-color:#bbb}.rating-table th,.rating-table td{border-color:#ccc}.rating-table select{appearance:none}.grid{gap:9px}.section h2{font-size:12pt}.position-block{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../index.html">GV<span>.</span> / SCOUTING</a><a class="back" href="../index.html#portfolio">← Voltar ao portefólio</a></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">Ferramenta de observação · Avaliação individual</div>
+<h1>Ficha de Scouting</h1>
+<p>Documento de apoio à observação e avaliação individual de jogadores. Regista comportamentos observáveis, considera o contexto competitivo e fundamenta a recomendação final. Preenche no navegador e utiliza a opção de impressão para guardar uma cópia em PDF.</p>
+<div class="actions"><button class="btn primary" type="button" onclick="window.print()">Imprimir / Guardar em PDF</button><button class="btn" type="button" onclick="document.getElementById('scoutingForm').reset()">Limpar ficha</button></div>
+<div class="note">Escala de avaliação: 1 — Muito insuficiente · 2 — Insuficiente · 3 — Adequado · 4 — Bom · 5 — Muito bom · N/O — Não observado. Avalia apenas o que foi possível observar.</div>
+</section>
+<form id="scoutingForm">
+<section class="section"><h2>01 · Identificação do atleta</h2><p class="hint">Dados essenciais para identificar o jogador e enquadrar a observação.</p>
+<div class="grid three">
+<div class="field"><label>Nome do jogador</label><input name="jogador"></div>
+<div class="field"><label>Data de nascimento / idade</label><input name="idade"></div>
+<div class="field"><label>Clube / equipa</label><input name="clube"></div>
+<div class="field"><label>Competição / escalão</label><input name="competicao"></div>
+<div class="field"><label>Posição principal</label><input name="posicao"></div>
+<div class="field"><label>Posição secundária</label><input name="posicao_sec"></div>
+<div class="field"><label>Pé dominante</label><select name="pe"><option value="">Selecionar</option><option>Direito</option><option>Esquerdo</option><option>Ambos</option><option>Não observado</option></select></div>
+<div class="field"><label>Altura (opcional)</label><input name="altura"></div>
+<div class="field"><label>Observador</label><input name="observador"></div>
+<div class="field"><label>Data da observação</label><input type="date" name="data"></div>
+<div class="field"><label>Jogo / adversário</label><input name="jogo"></div>
+<div class="field"><label>Resultado / minutos observados</label><input name="resultado_minutos"></div>
+</div></section>
+<section class="section"><h2>02 · Contexto e função</h2><p class="hint">Interpreta o rendimento em função do modelo de jogo, da posição e das exigências da partida.</p>
+<div class="grid">
+<div class="field"><label>Sistema tático da equipa</label><input name="sistema"></div>
+<div class="field"><label>Função / papel desempenhado</label><input name="funcao"></div>
+<div class="field"><label>Nível competitivo / contexto</label><input name="nivel"></div>
+<div class="field"><label>Condições relevantes da observação</label><input name="condicoes"></div>
+<div class="field"><label>Descrição da função com bola</label><textarea name="funcao_bola"></textarea></div>
+<div class="field"><label>Descrição da função sem bola</label><textarea name="funcao_sem_bola"></textarea></div>
+</div></section>
+<section class="section"><h2>03 · Comportamentos por momento do jogo</h2><p class="hint">Regista evidências concretas, evitando avaliações genéricas ou descontextualizadas.</p>
+<div class="grid">
+<div class="field"><label>Organização ofensiva</label><textarea name="org_ofensiva" placeholder="Posicionamento, apoios, mobilidade, progressão, criação e finalização..."></textarea></div>
+<div class="field"><label>Organização defensiva</label><textarea name="org_defensiva" placeholder="Posicionamento, controlo de referências, coberturas, duelos e proteção da baliza..."></textarea></div>
+<div class="field"><label>Transição ofensiva</label><textarea name="trans_ofensiva" placeholder="Reação à recuperação, primeira decisão, velocidade e critério de progressão..."></textarea></div>
+<div class="field"><label>Transição defensiva</label><textarea name="trans_defensiva" placeholder="Reação à perda, contrapressão, recuperação e proteção do espaço..."></textarea></div>
+<div class="field"><label>Bolas paradas ofensivas</label><textarea name="bp_ofensivas"></textarea></div>
+<div class="field"><label>Bolas paradas defensivas</label><textarea name="bp_defensivas"></textarea></div>
+</div></section>
+<section class="section"><h2>04 · Avaliação técnica e tática</h2><p class="hint">Seleciona uma classificação por indicador. Complementa com exemplos observados.</p>
+<table class="rating-table"><thead><tr><th>Indicador</th><th>Classificação</th><th>Indicador</th><th>Classificação</th></tr></thead><tbody>
+<tr><td>Primeiro toque / receção</td><td><select name="r_primeiro_toque"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Qualidade de passe</td><td><select name="r_passe"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Condução / proteção da bola</td><td><select name="r_conducao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Drible / 1x1 ofensivo</td><td><select name="r_drible"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Finalização</td><td><select name="r_finalizacao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Jogo aéreo</td><td><select name="r_aereo"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Orientação corporal / scan</td><td><select name="r_scan"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Tomada de decisão</td><td><select name="r_decisao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Leitura e compreensão do jogo</td><td><select name="r_leitura"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Posicionamento / ocupação do espaço</td><td><select name="r_posicionamento"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Duelos defensivos</td><td><select name="r_duelos"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Antecipação / interceção</td><td><select name="r_antecipacao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+</tbody></table>
+<div class="field" style="margin-top:14px"><label>Evidências técnicas e táticas adicionais</label><textarea name="evidencias_tecnicas"></textarea></div>
+</section>
+<section class="section"><h2>05 · Avaliação física</h2><p class="hint">Avaliação observacional, considerando a função e o contexto competitivo.</p>
+<table class="rating-table"><thead><tr><th>Indicador</th><th>Classificação</th><th>Indicador</th><th>Classificação</th></tr></thead><tbody>
+<tr><td>Velocidade / aceleração</td><td><select name="r_velocidade"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Resistência / repetição de esforços</td><td><select name="r_resistencia"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Força / capacidade de duelo</td><td><select name="r_forca"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Agilidade / coordenação</td><td><select name="r_agilidade"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Explosividade / potência</td><td><select name="r_potencia"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Mobilidade / equilíbrio</td><td><select name="r_mobilidade"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+</tbody></table>
+<div class="field" style="margin-top:14px"><label>Notas físicas / indicadores a aprofundar</label><textarea name="notas_fisicas"></textarea></div>
+</section>
+<section class="section"><h2>06 · Perfil psicológico e comportamental</h2><p class="hint">Regista comportamentos observáveis no contexto da equipa e da competição.</p>
+<table class="rating-table"><thead><tr><th>Indicador</th><th>Classificação</th><th>Indicador</th><th>Classificação</th></tr></thead><tbody>
+<tr><td>Concentração / atenção</td><td><select name="r_concentracao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Reação ao erro / resiliência</td><td><select name="r_resiliencia"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Comunicação</td><td><select name="r_comunicacao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Compromisso / intensidade</td><td><select name="r_compromisso"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+<tr><td>Cooperação / trabalho coletivo</td><td><select name="r_cooperacao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td><td>Autonomia / iniciativa</td><td><select name="r_autonomia"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>N/O</option></select></td></tr>
+</tbody></table>
+<div class="field" style="margin-top:14px"><label>Comportamentos e exemplos observados</label><textarea name="comportamentos"></textarea></div>
+</section>
+<section class="section"><h2>07 · Indicadores específicos por posição</h2><p class="hint">Seleciona a posição observada e regista apenas os indicadores relevantes para a função.</p>
+<div class="checkrow">
+<label><input type="checkbox" name="pos_gr"> Guarda-redes</label><label><input type="checkbox" name="pos_dc"> Defesa-central</label><label><input type="checkbox" name="pos_lat"> Lateral / ala</label><label><input type="checkbox" name="pos_med"> Médio</label><label><input type="checkbox" name="pos_ext"> Extremo</label><label><input type="checkbox" name="pos_av"> Avançado</label>
+</div>
+<div class="position-block"><h3>Guarda-redes</h3><div class="field"><label>Posicionamento, controlo da profundidade, jogo de pés, enquadramento, decisão e qualidade de intervenção</label><textarea name="indicadores_gr"></textarea></div></div>
+<div class="position-block"><h3>Defesa-central</h3><div class="field"><label>Controlo da profundidade, defesa da área, duelos, antecipação, construção e cobertura</label><textarea name="indicadores_dc"></textarea></div></div>
+<div class="position-block"><h3>Lateral / ala</h3><div class="field"><label>Progressão, largura/profundidade, cruzamento, 1x1, temporização e equilíbrio defensivo</label><textarea name="indicadores_lat"></textarea></div></div>
+<div class="position-block"><h3>Médio</h3><div class="field"><label>Orientação corporal, scan, receção sob pressão, ligação, gestão de ritmos, cobertura e chegada a zonas de finalização</label><textarea name="indicadores_med"></textarea></div></div>
+<div class="position-block"><h3>Extremo</h3><div class="field"><label>1x1, ataque à profundidade, movimentos interiores/exteriores, criação, cruzamento e finalização</label><textarea name="indicadores_ext"></textarea></div></div>
+<div class="position-block"><h3>Avançado</h3><div class="field"><label>Mobilidade, apoios, ataque à profundidade, ocupação da área, jogo associativo e eficácia de finalização</label><textarea name="indicadores_av"></textarea></div></div>
+</section>
+<section class="section"><h2>08 · Síntese e recomendação</h2><p class="hint">Conclusão fundamentada nas evidências recolhidas durante a observação.</p>
+<div class="grid">
+<div class="field"><label>Principais pontos fortes</label><textarea name="pontos_fortes"></textarea></div>
+<div class="field"><label>Principais limitações / aspetos a desenvolver</label><textarea name="limitacoes"></textarea></div>
+<div class="field"><label>Potencial de evolução / projeção</label><textarea name="potencial"></textarea></div>
+<div class="field"><label>Enquadramento no modelo de jogo / equipa</label><textarea name="enquadramento"></textarea></div>
+<div class="field"><label>Recomendação final</label><select name="recomendacao"><option value="">Selecionar</option><option>Recomendar contratação / integração</option><option>Manter em acompanhamento</option><option>Observar novamente</option><option>Não recomendar nesta fase</option><option>Informação insuficiente</option></select></div>
+<div class="field"><label>Prioridade de acompanhamento</label><select name="prioridade"><option value="">Selecionar</option><option>Alta</option><option>Média</option><option>Baixa</option></select></div>
+<div class="field"><label>Justificação da recomendação</label><textarea name="justificacao"></textarea></div>
+<div class="field"><label>Próximos passos / observações adicionais</label><textarea name="proximos_passos"></textarea></div>
+</div>
+</section>
+</form>
+<div class="footer">Gonçalo Valdez · Scouting & Análise de Futebol · Ferramenta de apoio à observação individual</div>
+</main>
+</body></html>
